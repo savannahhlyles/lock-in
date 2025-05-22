@@ -22,7 +22,7 @@ export default function AuthForm({ type }) {
     if (res.ok) {
       if (isLogin) {
         localStorage.setItem("token", data.token);
-        navigate("/");
+        navigate("/dashboard");
       } else {
         setMessage("All set. Now log in and get this thing done.");
         navigate("/login");
